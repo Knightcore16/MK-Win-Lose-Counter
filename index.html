@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Mortal Kombat Game</title>
+      <link rel="stylesheet" href="styles.css">
+      
+   </head>
+   <body>
+      <h1 class="title" id="title"></h1>
+      <div class="match-count">
+         <div id="match-results">
+            <div>
+               Match Count: <span id="matches-count">0</span>
+            </div>
+         </div>
+      </div>
+
+      <div class="container">
+         <div class="player-container" id="player1-container">
+            <div class="move-card">
+               <h2 id="player1-name-display">Player 1</h2>
+               <div>
+                  <span>Wins: </span><span id="player1-wins">0</span>
+                  <span>Losses: </span><span id="player1-losses">0</span>
+               </div>
+               <button onclick="recordMatchResult('player1')" style="background-color: #2433dd;">FATALITY</button>
+            </div>
+         </div>
+
+         <div class="versus"><img src="./versus.png" alt=""></div>
+
+
+         <div class="player-container" id="player2-container">
+            <div class="move-card">
+               <h2 id="player2-name-display">Player 2</h2>
+               <div>
+                  <span>Wins: </span><span id="player2-wins">0</span>
+                  <span>Losses: </span><span id="player2-losses">0</span>
+               </div>
+               <button onclick="recordMatchResult('player2')" style="background-color: #129228;">FATALITY</button>
+            </div>
+         </div>
+      </div>
+      <div class="end">
+         <button onclick="resetGame()" class="resetbtn">Reset Game</button>
+      </div>
+      
+
+      <script src="main.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js"></script>    
+
+      <script>
+        var quotes = [
+            "Flawless Victory!",
+            "Your soul is mine!",
+            "Finish Him!",
+            "You have failed this city!",
+            "Another soul for the Netherrealm!",
+            "I will have your heart!",
+            "You are weak!",
+            "I am the champion!",
+            "You’re still trying to win?",
+            "It’s official. You suck",
+            "Do not provoke a god.",
+            "You will learn respect!",
+        ];
+
+       var typed = new Typed('#title', {
+            strings: ["Mortal Kombat Win-Lose Counter", quotes[Math.floor(Math.random() * quotes.length)]],
+            typeSpeed: 40,
+            loop: false,
+            showCursor:false,
+            fadeOut: true,
+            fadeOutClass: 'typed-fade-out',
+            fadeOutDelay: 1000,
+            onComplete: function () {
+                setTimeout(function () {
+                typed.start(); // Restart typing animation
+            }, 5000); // Wait for 5 seconds before restarting
+            },
+         });
+
+          </script>
+   </body>
+</html>

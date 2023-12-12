@@ -1,0 +1,140 @@
+@font-face {
+    font-family: "Mortal-Kombat-MK11";
+    src: url("./fonts/Mortal-Kombat-MK11.otf");
+}
+
+body {
+    font-family: 'Mortal-Kombat-MK11';
+    background: url('./wallpaper.jpg');
+    background-size: cover;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
+  
+  h1.title {
+    margin-bottom: 20px;
+  }
+  
+  #match-results {
+    text-align: center;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    width: 80%; 
+  }
+  
+  .versus img {
+    width: 90%;
+  }
+  .versus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #player1-container.player-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url(./left1.jpg);
+    background-size: 100%;
+    padding: 20px;
+    margin: 10px ;
+    border-radius: 10px;
+    color: #fff;
+    width: 48%; 
+  }
+  #player1-container .move-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 220px;
+    white-space: nowrap;
+  }
+
+  #player2-container.player-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url(./right2.jpg);
+    background-size: cover;
+    padding: 20px;
+    margin: 10px ;
+    border-radius: 10px;
+    color: #fff;
+    width: 48%; 
+  }
+
+  #player2-container .move-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 260px;
+    white-space: nowrap;
+  }
+
+  
+  #player1-container.player-container div {
+    margin-bottom: 10px;
+  }
+  #player2-container.player-container div {
+    margin-bottom: 10px;
+  }
+  
+  #player1-wins,
+  #player1-losses,
+  #player2-wins,
+  #player2-losses,
+  #matches-count {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .match-count {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: gold;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    color: #000;
+  }
+  .end {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    color: #000;
+  }
+
+  button {
+    font-family: 'Mortal-Kombat-MK11';
+    margin: 10px;
+    padding: 10px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #c82333;
+  }
+
+  .resetbtn {
+    font-size: 24px;
+    border-radius: 8px;
+  }
+  
