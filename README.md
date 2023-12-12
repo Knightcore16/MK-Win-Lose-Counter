@@ -29,3 +29,10 @@ Clone the repository:
 ```bash
 git clone https://github.com/your-username/mortal-kombat-counter.git
 cd mortal-kombat-counter
+```
+## License
+This project is licensed under the MIT License.
+
+## Acknowledgments
+Inspired by Mortal Kombat game statistics.
+Built with HTML, CSS, and JavaScript.
