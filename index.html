@@ -68,20 +68,15 @@
         ];
 
        var typed = new Typed('#title', {
-            strings: ["Mortal Kombat Win-Lose Counter", quotes[Math.floor(Math.random() * quotes.length)]],
+            strings: ["Mortal Kombat Win-Lose Counter"],
             typeSpeed: 40,
             loop: false,
             showCursor:false,
             fadeOut: true,
             fadeOutClass: 'typed-fade-out',
             fadeOutDelay: 1000,
-            onComplete: function () {
-                setTimeout(function () {
-                typed.start(); // Restart typing animation
-            }, 5000); // Wait for 5 seconds before restarting
-            },
          });
-
+         // , quotes[Math.floor(Math.random() * quotes.length)]
           </script>
    </body>
 </html>
